@@ -19,7 +19,6 @@ import { bindDynamicLabelProvider } from './label/sample-dynamic-label-provider-
 import { bindSampleFilteredCommandContribution } from './contribution-filter/sample-filtered-command-contribution';
 import { bindSampleUnclosableView } from './view/sample-unclosable-view-contribution';
 import { bindSampleOutputChannelWithSeverity } from './output/sample-output-channel-with-severity';
-import { bindSampleMenu } from './menu/sample-menu-contribution';
 import { bindSampleFileWatching } from './file-watching/sample-file-watching-contribution';
 import { bindVSXCommand } from './vsx/sample-vsx-command-contribution';
 import { bindSampleToolbarContribution } from './toolbar/sample-toolbar-contribution';
@@ -36,7 +35,6 @@ export default new ContainerModule((
     bindDynamicLabelProvider(bind);
     bindSampleUnclosableView(bind);
     bindSampleOutputChannelWithSeverity(bind);
-    bindSampleMenu(bind);
     bindSampleFileWatching(bind);
     bindVSXCommand(bind);
     bindSampleFilteredCommandContribution(bind);
